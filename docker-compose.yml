@@ -12,3 +12,9 @@ services:
       - 27017:27017
     restart: unless-stopped
 
+  copper:
+    image: downthefallline/copper:latest
+    container_name: copper
+    ports:
+      - 8080:8080
+    restart: unless-stopped
